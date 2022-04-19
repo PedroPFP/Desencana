@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+:root{
+    --cor-principal:#00AEE4;
+    --cor-texto:#3C3C3C;
+    --cor-branco:#E4E4E4;
+    --cor-cardBackground:#787878;
+    --cor-cardTitulo:#e4e4e4;
+    --font-texto:"fraunces";
+    --font-titulo:'Volkhov'; 
+
+}
+*{
+    font-family: "Fraunces";
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+
+.btn{
+padding-top: 2%;
+padding-left: 2.5%;
+padding-bottom: 2%;
+padding-right: 2.5%;
+border-radius: 30px;
+border: none;
+background-color: var(--cor-principal);
+color: var(--cor-branco);
+font-size: 1.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Sections */
+
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+} 
+
+
+
+/* Navbar */
+
+.navbar{
+    background-color: var(--cor-principal);
+    color: var(--cor-branco);
+    display: flex;
+    justify-content: space-between;
+    padding-right:4%;
+    padding-left:4%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: center;
+    font-weight: 300;
+}
+.navbar span{
+
+    font-size: 24px;
+}
+.list{
+    display: flex;
+    margin-right: 5%;
+}
+.list li{
+    list-style: none;
+    margin-right: 3%;
+}
+
+/* Main/Slogan */
+
+.main{
+    
+    width: 100%;
+    height: 95vh;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/main.jpg");
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction: column;
+    color: var(--cor-branco);
+    background-color: rgba(0, 0, 0, 0.073);
+    background-size: cover;
+}
+
+.slogan{
+    text-align: center;
+    line-height: 65px;
+    font-weight: 300;
+    
+}
+.slogan h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    
+}
+.slogan h1{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: var(--font-titulo);
+}
+.slogan h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Problemas recorrentes */
+.problemas-onda{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background: url("../images/Forma\ onda.svg");
+    background-repeat: no-repeat;
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.titulo-onda{
+    padding-top: 3%;
+    font-family: var(--font-titulo);
+    color: var(--cor-branco);
+    font-size: 3rem;
+}
+
+.problemas{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 4%;
+}
+.problemas-card{    
+    width: 20%;  
+    border-radius: 15px;    
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25) ;
+}
+.problemas-card img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.problemas-card div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.problemas-card div h3{
+    padding: 1%;
+    font-family: var(--font-titulo);
+    color: var(--cor-texto);
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.problemas-card div p{
+    padding: 4%;
+    color: var(--cor-texto);
+    font-weight: 100;
+    font-size: 0.875rem;
+    
+}
+
+/* Nossa equipe */
+
+.nossaEquipe{
+    width: 100%;
+    height: 100vh;    
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/nossaEquipe.jpg");
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    color: var(--cor-branco);
+    background-color: rgba(0, 0, 0, 0.073);
+    background-size: cover;
+}
+ .nossaEquipe .titulo{
+     margin-top: 5%;
+     height: 10%;
+     display: flex;
+     align-items: center;     
+ }
+ .nossaEquipe .titulo h2{
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 4rem;
+ }
+ .nossaEquipe .conteudo{
+     height: 90%;
+     width: 90%;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ .nossaEquipe .conteudo .anos{
+     height: 16%;
+     width: 40%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+ }
+ .nossaEquipe .conteudo .anos .numero{
+     font-family: var(--font-titulo);
+     font-size: 8rem;
+     font-weight: 700;
+ }
+
+ .nossaEquipe .conteudo .anos .subTitulo{
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+ }
+
+ .nossaEquipe .conteudo .cards{
+    height: 80%;
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+ .nossaEquipe .conteudo .cards .card{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+ }
+ .nossaEquipe .conteudo .cards .card img{
+     width: 20%;
+}
+.nossaEquipe .conteudo .cards .card p{
+    width: 75%;
+    font-weight: 100;
+}
+
+
+/* Franquias */
+
+.franquias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.franquias .titulo{
+    font-family: var(--font-titulo);
+    font-size: 4rem;
+    margin-top: 5%;
+     height: 10%;
+     display: flex;
+     align-items: center; 
+     justify-content: center;
+}
+
+.franquias .artigo{
+    height: 100%;
+    width: 80%;
+    display:  flex;
+    flex-direction: row;    
+    justify-content: space-between;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+
+.franquias .artigo img{
+    width: 48%;
+    border-radius: 20px;
+}
+
+.franquias .artigo div{
+    /* height: 80%; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.franquias .artigo div .conteudo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.franquias .artigo div .conteudo div h3{
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+}
+
+.franquias .artigo div .conteudo div p{
+    font-size: 0.875rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+/* Orçamento */
+
+
+
+
+.orcamento .card{
+    width: 25%;
+    
+    background-color: var(--cor-cardBackground);    
+    border-radius: 30px;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 40px;
+
+}
+
+.orcamento .card h2{
+    
+    background-color: var(--cor-cardTitulo);
+    color: var(--cor-cardBackground);
+    font-family: var(--font-titulo);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 9%;
+}
+.orcamento .card h3{
+    
+    background-color: var(--cor-cardTitulo);
+    color: var(--cor-cardBackground);
+    font-family: var(--font-titulo);
+    font-size: 3rem;
+    margin-bottom: 9%;
+    text-align: center;
+}
+
+.orcamento .conteudo .topicos{
+    
+    color: var(--cor-branco);
+    margin:4%;
+}
+.orcamento .conteudo{
+    height: 70%;
+}
+.orcamento .conteudo .descricao{
+    color: var(--cor-branco);
+    margin: 4%;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 200;
+    margin-top: 10%;
+}
+
